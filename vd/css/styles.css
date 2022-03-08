@@ -82,3 +82,53 @@ body{
     clear: both;
     margin-top: -30px;
 } 
+/* end header */
+
+/* large device only */
+@media (min-width: 1200px){
+
+}
+/* medium device only */
+@media (min-width:992px) and (max-width: 1199px) {
+    /* end header */
+    #logo-img {
+        background: url(../mau-logo-do-an-dep-10-min.jpg) no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+        object-fit: fill;
+        background-position: center; 
+        background-size:contain;
+    }
+    /* end header */
+}
+/* small device only */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* extra small */
+@media (max-width: 767px) {
+    /* header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /* restaurant name*/
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .navbar-brand p { /* tach mon cert */
+        font-size: 6m;
+        margin-top: 12px;
+    }
+    .navbar-brand p img {/* tach mon cimg */
+        height: 20px;
+    }
+    #collapsable-nav a { /* collapsed nav menu glyph */
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span{ 
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+}
