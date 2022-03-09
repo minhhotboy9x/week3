@@ -11,7 +11,7 @@ body{
     border: 0;
 }
 #logo-img{
-    background: url(../mau-logo-do-an-dep-10-min.jpg) no-repeat;
+    background: url(../image/mau-logo-do-an-dep-10-min.jpg) no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
@@ -88,19 +88,55 @@ body{
     margin-top: 30px;
     padding: 0;
 }
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url(../image/food.jpg) no-repeat; background-size: cover;
+    background-position: center;
+}
+#specials-tile {
+    background: url(../image/food2.jpg) no-repeat; background-size: cover;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
 
 /* large device only */
 @media (min-width: 1200px){
     .container .jumbotron {
-        background: url('../rsz_nha-hang.jpg') no-repeat;
+        background: url('../image/rsz_nha-hang.jpg') no-repeat;
         height: 675px; 
     }
 }
+/* end large device */
+
 /* medium device only */
 @media (min-width:992px) and (max-width: 1199px) {
     /* end header */
     #logo-img {
-        background: url(../mau-logo-do-an-dep-10-min.jpg) no-repeat;
+        background: url(../image/mau-logo-do-an-dep-10-min.jpg) no-repeat;
         width: 100px;
         height: 100px;
         margin: 5px 5px 5px 0;
@@ -112,21 +148,25 @@ body{
 
     /* home page */
     .container .jumbotron {
-        background: url('../rsz_1nha-hang.jpg') no-repeat;
+        background: url('../image/rsz_1nha-hang.jpg') no-repeat;
         height: 558px;
     }
 }
+/* end medium device */
+
 /* small device only */
 @media (min-width: 768px) and (max-width: 991px) {
     /* home page */
     .container .jumbotron {
-        background: url('../rsz_2nha-hang.jpg') no-repeat;
+        background: url('../image/rsz_2nha-hang.jpg') no-repeat;
         height: 432px;
     }
-
 }
+/* end small device */
+
 /* extra small */
 @media (max-width: 767px) {
+
     /* header */
     .navbar-brand {
         padding-top: 10px;
@@ -150,23 +190,50 @@ body{
         font-size: 1.2em;
         margin-right: 5px;
     }
-}
+    #call-btn > a {
+        background-color: #f6b319; 
+        display: block;  
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        font-size: 1.5em; 
+        color: #951c49;
+    }
+    #xs-deliver{
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    /*end header*/
 
-#call-btn > a {
-    background-color: #f6b319; 
-    display: block;  
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    font-size: 1.5em; 
-    color: #951c49;
-}
-#xs-deliver{
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-}
-/*end header*/
+    /* home page */
+    .container .jumbotron{
+    margin-top: 30px;
+    padding: 0;
+    }
 
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+
+}
+/* end extra small device */
+
+/* supper extra small device */
+@media (max-width: 479) {
+    /* header */
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    /* end header */
+    
+    /* home page */
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+}
 
